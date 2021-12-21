@@ -4,14 +4,14 @@ import { getRandomIntegerInRange } from "./getRandomIntegerInRange";
 
 export type HumanReadableId = () => string;
 
+const animalsLength = animals.length;
+const adjectivesLength = adjectives.length;
+
 export const humanReadableId: HumanReadableId = () => {
-  const randomAdjectiveIndex = getRandomIntegerInRange(
-    0,
-    adjectives.length - 1
-  );
+  const randomAdjectiveIndex = getRandomIntegerInRange(0, adjectivesLength - 1);
   const randomAdjective = adjectives[randomAdjectiveIndex];
 
-  const randomAnimalIndex = getRandomIntegerInRange(0, animals.length - 1);
+  const randomAnimalIndex = getRandomIntegerInRange(0, animalsLength - 1);
   const randomAnimal = animals[randomAnimalIndex];
 
   const randomNumber = getRandomIntegerInRange(0, 100);
