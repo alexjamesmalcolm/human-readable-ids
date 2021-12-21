@@ -1,1 +1,1 @@
-export { humanReadableId } from "./src/humanReadableId";
+export { humanReadableId, HumanReadableId } from "./src/humanReadableId";

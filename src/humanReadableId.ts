@@ -2,7 +2,9 @@ import { adjectives } from "./adjectives";
 import { animals } from "./animals";
 import { getRandomIntegerInRange } from "./getRandomIntegerInRange";
 
-export const humanReadableId = (): string => {
+export type HumanReadableId = () => string;
+
+export const humanReadableId: HumanReadableId = () => {
   const randomAdjectiveIndex = getRandomIntegerInRange(
     0,
     adjectives.length - 1
