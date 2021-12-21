@@ -1,18 +1,17 @@
 import { adjectives } from "./adjectives";
 import { animals } from "./animals";
 import { getRandomIntegerInRange } from "./getRandomIntegerInRange";
+import { getRandomValueFromArray } from "./getRandomValueFromArray";
 
 export type HumanReadableId = () => string;
 
-const animalsLength = animals.length;
-const adjectivesLength = adjectives.length;
+const randomAdjectiveCallback = getRandomValueFromArray(adjectives);
+const randomAnimalCallback = getRandomValueFromArray(animals);
 
 export const humanReadableId: HumanReadableId = () => {
-  const randomAdjectiveIndex = getRandomIntegerInRange(0, adjectivesLength - 1);
-  const randomAdjective = adjectives[randomAdjectiveIndex];
+  const randomAdjective = randomAdjectiveCallback();
 
-  const randomAnimalIndex = getRandomIntegerInRange(0, animalsLength - 1);
-  const randomAnimal = animals[randomAnimalIndex];
+  const randomAnimal = randomAnimalCallback();
 
   const randomNumber = getRandomIntegerInRange(0, 100);
 

@@ -42,20 +42,10 @@
   "files": [
     "LICENSE",
     "README.md",
-    "index.ts",
-    "src/adjectives.ts",
-    "src/animals.ts",
-    "src/getRandomIntegerInRange.ts",
-    "src/humanReadableId.ts",
-    "dist/index.js",
-    "dist/index.js.map",
-    "dist/src/adjectives.js",
-    "dist/src/adjectives.js.map",
-    "dist/src/animals.js",
-    "dist/src/animals.js.map",
-    "dist/src/getRandomIntegerInRange.js",
-    "dist/src/getRandomIntegerInRange.js.map",
-    "dist/src/humanReadableId.js",
-    "dist/src/humanReadableId.js.map"
+    "**/*.ts",
+    "src",
+    "!**/*.test.ts",
+    "!**/*.config.ts",
+    "dist"
   ]
 }
