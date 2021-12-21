@@ -3,7 +3,6 @@
   "version": "1.0.4",
   "description": "Generate human-readable ids from lists of easy-to-spell nouns and adjectives",
   "main": "dist/index.js",
-  "dependencies": {},
   "devDependencies": {
     "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
@@ -18,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexjamesmalcolm/human-readable-ids.git"
+    "url": "git+https://github.com/alexjamesmalcolm/human-readable-ids.git"
   },
   "keywords": [
     "hri",
@@ -32,12 +31,13 @@
     "nouns",
     "adjectives"
   ],
-  "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
-  "license": "Apache2",
+  "author": "Alex James Malcolm",
+  "license": "Apache-2.0",
+  "private": false,
   "bugs": {
     "url": "https://github.com/alexjamesmalcolm/human-readable-ids/issues"
   },
-  "homepage": "https://github.com/alexjamesmalcolm/human-readable-ids/blob/main/README.md",
+  "homepage": "https://github.com/alexjamesmalcolm/human-readable-ids#readme",
   "files": [
     "LICENSE",
     "README.md",
