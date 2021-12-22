@@ -16,10 +16,7 @@
     "prepare": "npm run build",
     "tsc": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexjamesmalcolm/human-readable-ids.git"
-  },
+  "repository": "github:alexjamesmalcolm/human-readable-ids",
   "keywords": [
     "hri",
     "human",
@@ -32,7 +29,17 @@
     "nouns",
     "adjectives"
   ],
-  "author": "Alex James Malcolm",
+  "author": {
+    "name": "AJ ONeal",
+    "email": "coolaj86@gmail.com",
+    "url": "https://coolaj86.com"
+  },
+  "contributors": [
+    {
+      "name": "Alexander James Malcolm",
+      "url": "https://alexjamesmalcolm.com"
+    }
+  ],
   "license": "Apache-2.0",
   "private": false,
   "bugs": {
