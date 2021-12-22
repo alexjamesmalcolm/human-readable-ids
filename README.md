@@ -1,9 +1,9 @@
-# human-readable-ids-js
+# human-readable-ids
 
-Use JavaScript to generate human-readable ids from a lists of nouns and
+Use JavaScript to generate human-readable ids from a list of animals and
 adjectives.
 
-Generate ids in the format of `adjective-noun-#` such as
+ids are in the format of `adjective-animal-##` such as:
 
 - silly-goose-37
 - quick-cobra-15
@@ -11,17 +11,16 @@ Generate ids in the format of `adjective-noun-#` such as
 - brave-ladybug-90
 
 My problem is that I often want ids that I can type without having to look at
-twice (nor telling someone else twice).
+twice (nor telling someone else twice). I should be able to shout one of these
+ids across the room to a coworker or spouse and have them be able to enter it
+without any confusion.
 
-I should be able to shout one of these ids across the room to a co-worker or
-spouse and have them be able to enter it without any confusion.
-
-Currently the id space is about 1,000,000 ids (100 * 100 * 100).
+Currently the id space is 12,520,970 ids (539 adjectives * 230 animals * 101
+numbers).
 
 The goal is to have several billion possible combinations by adding more words
-as well as expanding the ids to have verbs and adverbs.
-
-For a larger address space now, consider:
+as well as expanding the ids to have verbs and adverbs. For a larger address
+space now, consider:
 
 - Human Readable IDs for Node.js and Browser: <https://github.com/linus/greg/>
 - Human Readable IDs for Java:
@@ -30,58 +29,6 @@ For a larger address space now, consider:
 
 All of these also have the benefit of bi-directional conversion, but not all of
 them have words which are easy to pronounce and spell.
-
-## Usage
-
-### npm
-
-```bash
-# from npm
-npm install --save human-readable-ids
-```
-
-```bash
-# directly from git
-npm install --save https://git.coolaj86.com/coolaj86/human-readable-ids.js.git
-```
-
-```javascript
-"use strict";
-
-var hri = require("human-readable-ids").hri;
-var i;
-
-// generate 100 random ids
-for (i = 0; i < 100; i += 1) {
-  console.log(hri.random());
-}
-```
-
-### bower / browser
-
-```
-bower install --save human-readable-ids
-```
-
-```html
-<script src="bower_components/knuth-shuffle/index.js"></script>
-    <script src="bower_components/human-readable-ids/assets/animals.js"></script>
-    <script src="bower_components/human-readable-ids/assets/adjectives.js"></script>
-    <script src="bower_components/human-readable-ids/index.js"></script>
-```
-
-```javascript
-(function (exports) {
-  "use strict";
-
-  var hri = exports.humanReadableIds || require("human-readable-ids").hri;
-  var i;
-
-  for (i = 0; i < 100; i += 1) {
-    console.log(hri.random());
-  }
-})("undefined" !== typeof exports && exports || new Function("return this")());
-```
 
 ## Contributing
 
